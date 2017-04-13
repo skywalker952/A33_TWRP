@@ -1,0 +1,13 @@
+on init
+    # Generic NAND flash driver code
+    insmod /nand.ko
+    # Display driver
+    insmod /disp.ko
+    # Lcd driver
+    insmod /lcd.ko
+    # Sunxi-keyboard driver
+    insmod /sunxi-keyboard.ko
+    # Detection i2c device driver
+    insmod /sw-device.ko
+    # GSLX680 touchscreen controller driver
+    insmod /gslX680new.ko
