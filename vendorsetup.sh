@@ -1,1 +1,1 @@
-add_lunch_combo omni_x7-userdebug
+add_lunch_combo woxter_qx120-userdebug

@@ -1,13 +1,13 @@
-/bootloader		vfat		/dev/block/nanda		flags=display="Bootloader";wipeingui;backup=1
-/env			emmc		/dev/block/nandb		flags=display="Env";wipeingui;backup=1
-/boot			emmc		/dev/block/nandc		flags=display="Boot";wipeingui;backup=1
-/system			ext4		/dev/block/nandd		flags=display="System";wipeingui;backup=1
-/misc			emmc		/dev/block/nande		flags=display="Misc";wipeingui;backup=1
-/recovery		emmc		/dev/block/nandf		flags=display="Recovery";wipeingui;backup=1
-/cache			ext4		/dev/block/nandg		flags=display="Cache";wipeduringfactoryreset;wipeingui;backup=1
-/metadata		emmc		/dev/block/nandh		flags=display="Metadata";wipeingui;backup=1
-/private		vfat		/dev/block/nandi		flags=display="Private";wipeingui;backup=1
-/data			ext4		/dev/block/nandj		flags=display="Data";wipeingui;wipeduringfactoryreset;backup=1
+/bootloader		vfat		/dev/block/by-name/bootloader		flags=display="Bootloader";wipeingui;backup=1
+/env			emmc		/dev/block/by-name/env		flags=display="Env";wipeingui;backup=1
+/boot			emmc		/dev/block/by-name/boot		flags=display="Boot";wipeingui;backup=1
+/system			ext4		/dev/block/by-name/system		flags=display="System";wipeingui;backup=1
+/misc			emmc		/dev/block/by-name/misc		flags=display="Misc";wipeingui;backup=1
+/recovery		emmc		/dev/block/by-name/recovery		flags=display="Recovery";wipeingui;backup=1
+/cache			ext4		/dev/block/by-name/cache		flags=display="Cache";wipeduringfactoryreset;wipeingui;backup=1
+/metadata		emmc		/dev/block/by-name/metadata		flags=display="Metadata";wipeingui;backup=1
+/private		vfat		/dev/block/by-name/private		flags=display="Private";wipeingui;backup=1
+/data			ext4		/dev/block/by-name/UDISK		flags=display="Data";wipeingui;wipeduringfactoryreset;backup=1
 /extsd			auto		/dev/block/mmcblk0p1		flags=display="ExtSD (part_1)";storage;wipeingui;removable
 /extsd2			auto		/dev/block/mmcblk0p2		flags=display="ExtSD (part_2)";storage;wipeingui;removable
 /usb-otg		auto		/dev/block/sda4			flags=display="USB-OTG";storage;wipeingui;removable
